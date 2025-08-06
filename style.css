@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Aubrey", system-ui;
+    font-weight: 400;
+    font-style:italic;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.name-section {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.nav-links {
+    font-size: 14px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 2px;
+}
+
+.nav-links a:hover {
+    color: #0066cc;
+}
+
+.hero-section {
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 200px);
+}
+
+/* Desktop Layout */
+.desktop-main {
+    flex: 1;
+    display: block;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    border-right: 2px solid #000;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.grid-item:last-child {
+    border-right: none;
+}
+
+/* Special styling for middle column (Work Experience) */
+.grid-item:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-section {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.opensource-section {
+    flex: 1;
+}
+
+.grid-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.grid-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.grid-item li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.grid-item hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 0;
+}
+
+.grid-item p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.grid-item .company,
+.grid-item .mobile-company {
+    font-weight: bold;
+    color: #333;
+}
+
+.grid-item a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
+}
+
+.courses-section {
+    margin-top: 15px;
+}
+
+.courses-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.courses-section li {
+    font-size: 13px;
+    color: #333;
+}
+
+.courses-section li::before {
+    content: "- ";
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin-top: 20px;
+}
+
+.reviews-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reviews-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.review-card {
+    flex: 1;
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.review-text {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.review-author {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Mobile Layout - Hidden by default */
+.mobile-main {
+    display: none;
+    width: 100%;
+}
+
+.mobile-section {
+    border-bottom: 2px solid #000;
+}
+
+.mobile-section:last-child {
+    border-bottom: none;
+}
+
+.mobile-section-header {
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.mobile-section-content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.mobile-section-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-section-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.mobile-section-content li:last-child {
+    border-bottom: none;
+}
+
+.mobile-section-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.mobile-section-content a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.mobile-section-content a:hover {
+    text-decoration: underline;
+}
+
+.mobile-company {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mobile-courses-title {
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+.mobile-section-content .mobile-courses-title+ul li::before {
+    content: "- ";
+}
+
+.mobile-review-card {
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.mobile-review-text {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.mobile-review-author {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        border: 2px solid #000;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        align-self: flex-end;
+    }
+
+    .hero-section {
+        text-align: left;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    /* Hide desktop layout */
+    .desktop-main {
+        display: none;
+    }
+
+    /* Show mobile layout */
+    .mobile-main {
+        display: block;
+    }
+}
+
+/* Large desktop adjustments */
+@media (min-width: 769px) {
+    .header-top {
+        align-items: center;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+}
+
+/* Tablet and larger mobile adjustments */
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+
+    .mobile-section-content {
+        padding: 15px;
+    }
+
+    .nav-links {
+        font-size: 12px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+}
