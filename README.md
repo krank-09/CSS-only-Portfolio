@@ -1,3 +1,7 @@
-# CSS-only-Portfolio
-A simple CSS portfolio showcasing various styles and layouts
-Project idea from : https://roadmap.sh/projects/portfolio-website
+# CSS Portfolio
+
+A portfolio page built with plain HTML and CSS, no JavaScript or frameworks. I made it to practise layout, typography and styling.
+
+Live page: https://krank-09.github.io/CSS-only-Portfolio/ (after GitHub Pages is turned on)
+
+Open `index.html` in a browser to view it locally.
